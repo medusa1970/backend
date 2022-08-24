@@ -50,17 +50,6 @@ const userSchema = new Schema({
         type: String,
         required: true,
     },
-    recovery_code: {
-        type: String,
-        default: null,
-        trim: true
-    },
-    state: {
-        type: String,
-        required: true,
-        enum: ['active', 'inactive', 'pending'],
-        default: 'pending'
-    },
 }, {
     timestamps: true,
     versionKey: false
